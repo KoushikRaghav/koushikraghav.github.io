@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2e4d5;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f2e4d5;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+header div {
+    margin-left: 140px; /* Adjust to make space for image */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    border-color: black;
+    transform: scale(1.05);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    margin: 0; /* Ensure same margin */
+}
+
+.about-me p {
+    margin: 0; /* Ensure no extra margins */
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.contact-list li {
+    margin: 0; /* Remove margin to avoid spacing issues */
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+    background-color: #f2e4d5; /* Match the header background color */
+}
+
+.contact-list a:hover {
+    border-color: black;
+    transform: scale(1.05);
+    background-color: #855d5d; /* Darker background on hover */
+}
+
+.contact-list i {
+    margin-right: 5px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #674d4d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hide by default */
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #855d5d;
+    transform: scale(1.05);
+}
+
+.back-to-top i {
+    margin-right: 5px;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.icon:before {
+    line-height: inherit;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.icon.alt:before {
+    border-radius: 100%;
+    color: #242943;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+}
+
+a.icon.alt:before {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+a.icon.alt:hover:before {
+    background-color: #6fc3df;
+}
